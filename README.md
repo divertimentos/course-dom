@@ -136,12 +136,23 @@ Com irmãos também, através do `.nextSibling`. Essa propriedade é read-only e
 
   <script>
     function handleClick() {
-      let inputValue = document.getElementById("input").value // pega o valor presente no input
-      const li = document.createElement("li") // cria um elemento li
-      const liText = document.createTextNode(inputValue) // cria um texto como valor do input
-      li.appendChild(liText) // adiciona esse text dentro do li criado
-      document.getElementById("lista").appendChild(li) // adiciona o elemento criado como filho de "lista"
-      document.getElementById("input").value = '' // limpa o input após o clique
+	  // pega o valor presente no input
+      let inputValue = document.getElementById("input").value 
+
+	  // cria um elemento li
+      const li = document.createElement("li") 
+
+	  // cria um texto como valor do input
+      const liText = document.createTextNode(inputValue) 
+      
+      // adiciona esse text dentro do li criado
+      li.appendChild(liText) 
+
+	  // adiciona o elemento criado como filho de "lista"
+      document.getElementById("lista").appendChild(li) 
+
+	  // limpa o input após o clique
+      document.getElementById("input").value = '' 
     }
   </script>
 </body>
