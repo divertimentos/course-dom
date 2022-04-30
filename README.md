@@ -174,15 +174,13 @@ Simplesmente retorna propriedades de elementos. Por exemplo:
 ```
 
 ```javascript
-<script>
   function handleClick() {
-    const input = document.querySelector("input")
+    const input = document.querySelector("input"
     console.log(input.getAttribute("placeholder"))
 
-    // essa função deve devoler:
-    // "Eu sou o atributo!"
+   // essa função deve devoler:
+   // "Eu sou o atributo!"
  }
-</script>
 
 
 ```
