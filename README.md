@@ -124,7 +124,7 @@ Com irmãos também, através do `.nextSibling`. Essa propriedade é read-only e
 
 ## Criando elementos
 
-```javascript
+```html
 <body>
   <div>
     <input id="input" name="input" placeholder="Nomeie o elemento">
@@ -133,28 +133,29 @@ Com irmãos também, através do `.nextSibling`. Essa propriedade é read-only e
   <div id="lista">
     <p>Lista:</p>
   </div>
-
-  <script>
-    function handleClick() {
-	  // pega o valor presente no input
-      let inputValue = document.getElementById("input").value 
-
-	  // cria um elemento li
-      const li = document.createElement("li") 
-
-	  // cria um texto como valor do input
-      const liText = document.createTextNode(inputValue) 
-      
-      // adiciona esse text dentro do li criado
-      li.appendChild(liText) 
-
-	  // adiciona o elemento criado como filho de "lista"
-      document.getElementById("lista").appendChild(li) 
-
-	  // limpa o input após o clique
-      document.getElementById("input").value = '' 
-    }
-  </script>
 </body>
+
+```
+
+```javascript
+ function handleClick() {
+	// pega o valor presente no input
+	let inputValue = document.getElementById("input").value 
+
+	// cria um elemento li
+	const li = document.createElement("li") 
+
+	// cria um texto como valor do input
+	const liText = document.createTextNode(inputValue) 
+  
+	// adiciona esse text dentro do li criado
+	li.appendChild(liText) 
+
+	// adiciona o elemento criado como filho de "lista"
+	document.getElementById("lista").appendChild(li) 
+
+	// limpa o input após o clique
+	document.getElementById("input").value = '' 
+ }
 
 ```
