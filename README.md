@@ -184,3 +184,6 @@ Simplesmente retorna propriedades de elementos. Por exemplo:
 
 
 ```
+
+Da mesma forma, você pode setar atributos usando `setAttribute()` e remover usando `removeAttribute()`.
+
