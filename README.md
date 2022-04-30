@@ -86,7 +86,7 @@ Quando você pede o `.children` de um elemento, ele retorna uma *HTMLCollection*
 
 ```
 
-Podemos brincar com pais e filhos também:
+Também podemos brincar com pais e filhos:
 
 ```html
 
@@ -119,3 +119,31 @@ Podemos brincar com pais e filhos também:
 ```
 
 ![parent-node](https://github.com/divertimentos/JS-DOM-Studies/blob/main/media/parent-node.png)
+
+Com irmãos também, através do `.nextSibling`. Essa propriedade é read-only e meio esquisita. Não consegui usá-la para nada. Ela considera espaços vazios como irmãos, então em meus testes ela por veze retornada "\\n " como resultado. :shrug:
+
+## Criando elementos
+
+```javascript
+<body>
+  <div>
+    <input id="input" name="input" placeholder="Nomeie o elemento">
+    <button onclick=handleClick() name="button" value="GO!">GO</button>
+  </div>
+  <div id="lista">
+    <p>Lista:</p>
+  </div>
+
+  <script>
+    function handleClick() {
+      let inputValue = document.getElementById("input").value // pega o valor presente no input
+      const li = document.createElement("li") // cria um elemento li
+      const liText = document.createTextNode(inputValue) // cria um texto como valor do input
+      li.appendChild(liText) // adiciona esse text dentro do li criado
+      document.getElementById("lista").appendChild(li) // adiciona o elemento criado como filho de "lista"
+      document.getElementById("input").value = '' // limpa o input após o clique
+    }
+  </script>
+</body>
+
+```
