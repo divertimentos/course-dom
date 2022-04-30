@@ -160,3 +160,29 @@ Com irmãos também, através do `.nextSibling`. Essa propriedade é read-only e
  }
 
 ```
+
+## Retornando atributos
+Simplesmente retorna propriedades de elementos. Por exemplo:
+
+```html
+<body>
+  <div>
+    <input id="input" name="input" placeholder="Eu sou o atributo!">
+    <button onclick=handleClick() name="button" value="GO!">GO</button>
+  </div>
+</body>
+```
+
+```javascript
+  <script>
+    function handleClick() {
+	  const input = document.querySelector("input")
+      console.log(input.getAttribute("placeholder"))
+
+      // essa função deve devoler:
+      // "Eu sou o atributo!"
+    }
+  </script>
+
+
+```

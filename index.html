@@ -15,21 +15,13 @@
 
 <body>
   <div>
-    <input id="input" name="input" placeholder="Nomeie o elemento">
+    <input id="input" name="input" placeholder="Eu sou o atributo!">
     <button onclick=handleClick() name="button" value="GO!">GO</button>
-  </div>
-  <div id="lista">
-    <p>Lista:</p>
   </div>
 
   <script>
     function handleClick() {
-      let inputValue = document.getElementById("input").value // pega o valor presente no input
-      const li = document.createElement("li") // cria um elemento li
-      const liText = document.createTextNode(inputValue) // cria um texto como valor do input
-      li.appendChild(liText) // adiciona esse text dentro do li criado
-      document.getElementById("lista").appendChild(li) // adiciona o elemento criado como filho de "lista"
-      document.getElementById("input").value = '' // limpa o input após o clique
+      console.log(document.querySelector("input").getAttribute("placeholder"))
     }
   </script>
 </body>
