@@ -9,3 +9,8 @@ p::first-line {
 p::after {
   content: url("./public/vite.svg");
 }
+
+.hierarchy,
+.weird {
+  display: none;
+}
