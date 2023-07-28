@@ -1,0 +1,11 @@
+h1.heading::before {
+  content: "*";
+}
+
+p::first-line {
+  color: red;
+}
+
+p::after {
+  content: url("./public/vite.svg");
+}
