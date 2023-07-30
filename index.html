@@ -52,9 +52,43 @@
       <button onclick="newWindow()">Curious?</button>
     </div>
 
-    <div>
-      <h2>4. Acessing the DOM</h2>
+    <h2>4. Acessing the DOM</h2>
+    <div class="acessing">
       <h3>Document Object Model</h3>
+    </div>
+
+    <h2>Acessing elements in the DOM</h2>
+    <div class="elements">
+      <h3 id="main">Acessing Elements</h3>
+      <!--Section 1 -->
+      <h4>Using the ID (#header)</h4>
+      <div id="header">Access this using <strong>getElementById()</strong></div>
+
+      <!--Section 2-->
+      <h4>Using the Class (.header)</h4>
+      <div class="header">
+        1. Access this by using <strong>getElementByClassName()</strong>
+      </div>
+      <div class="header">
+        2. Access this by using <strong>getElementByClassName()</strong>
+      </div>
+
+      <!--Section 3-->
+      <h4>Using the Tag</h4>
+      <p>1. Access this by using <strong>getElementByTagName()</strong></p>
+      <p>2. Access this by using <strong>getElementByTagName()</strong></p>
+
+      <!-- section 4 -->
+      <h4>Using the Query Selector (with ID of 'query')</h4>
+      <div id="query">
+        1. Access this by using <strong>querySelector()</strong>
+      </div>
+
+      <!-- Section 5 -->
+      <h4>Using the Query Selector All (with class of 'query-all')</h4>
+      <div class="query-all"> 1. Access this by using <strong>querySelectorAll()</strong>
+      <div class="query-all"> 1. Access this by using <strong>querySelectorAll()</strong>
+      </div>
     </div>
   </body>
 </html>
