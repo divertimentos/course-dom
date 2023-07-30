@@ -3,14 +3,14 @@ h1.heading::before {
 }
 
 p::first-line {
-  color: red;
+  /* color: red; */
 }
 
 p::after {
   content: url("./public/vite.svg");
 }
 
-.hierarchy,
-.weird {
+.weird,
+.timeout {
   display: none;
 }
