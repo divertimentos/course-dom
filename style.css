@@ -10,6 +10,7 @@ p::after {
   content: url("./public/vite.svg");
 }
 
+.hierarchy,
 .weird,
 .timeout {
   display: none;
