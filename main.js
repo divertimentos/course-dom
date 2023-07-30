@@ -8,3 +8,18 @@ function newWindow() {
     window.close(this);
   }, 5000);
 }
+
+// getElementById
+function changeBackgroundById(idName, color) {
+  const header = document.getElementById(idName);
+  header.style.backgroundColor = color;
+}
+
+changeBackgroundById("header", "cornflowerblue");
+
+function changeBackgroundByClass(className, color) {
+  const header = document.getElementsByClassName(className);
+  console.log(header);
+}
+
+changeBackgroundByClass("header", "orange");
