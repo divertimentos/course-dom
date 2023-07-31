@@ -8,10 +8,16 @@
     <link rel="icon" href="./public/vite.svg" />
     <script src="main.js" async></script>
   </head>
+
   <body>
-    <header>
+    <div>
       <h1>DOM Studies</h1>
-    </header>
+    </div>
+
+    <div>
+      <a href="tests/test_skeleton.html">Test 1</a>
+    </div>
+
     <h2>1. Let's start with Hierarchy</h2>
     <div class="hierarchy">
       <p>
@@ -41,8 +47,8 @@
         nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
         minim nulla est proident. Nostrud officia pariatur ut officia.
       </p>
-      ;
     </div>
+
     <h2>3. Let's build a setTimeout() function</h2>
     <div class="timeout">
       <h3>Wanna find out what Shivoo means?</h3>
@@ -60,11 +66,9 @@
     <h2>Acessing elements in the DOM</h2>
     <div class="elements">
       <h3 id="main">Acessing Elements</h3>
-      <!--Section 1 -->
       <h4>Using the ID (#header)</h4>
       <div id="header">Access this using <strong>getElementById()</strong></div>
 
-      <!--Section 2-->
       <h4>Using the Class (.header)</h4>
       <div class="header">
         1. Access this by using <strong>getElementsByClassName()</strong>
@@ -72,22 +76,22 @@
       <div class="header">
         2. Access this by using <strong>getElementsByClassName()</strong>
       </div>
+    </div>
 
-      <!--Section 3-->
-      <h4>Using the Tag</h4>
-      <p>1. Access this by using <strong>getElementByTagName()</strong></p>
-      <p>2. Access this by using <strong>getElementByTagName()</strong></p>
+    <h4>Using the Tag</h4>
+    <p>1. Access this by using <strong>getElementByTagName()</strong></p>
+    <p>2. Access this by using <strong>getElementByTagName()</strong></p>
 
-      <!-- section 4 -->
-      <h4>Using the Query Selector (with ID of 'query')</h4>
-      <div id="query">
-        1. Access this by using <strong>querySelector()</strong>
-      </div>
+    <h4>Using the Query Selector (with ID of 'query')</h4>
+    <div id="query">
+      1. Access this by using <strong>querySelector()</strong>
+    </div>
 
-      <!-- Section 5 -->
-      <h4>Using the Query Selector All (with class of 'query-all')</h4>
-      <div class="query-all"> 1. Access this by using <strong>querySelectorAll()</strong>
-      <div class="query-all"> 1. Access this by using <strong>querySelectorAll()</strong>
+    <h4>Using the Query Selector All (with class of 'query-all')</h4>
+    <div class="query-all">
+      1. Access this by using <strong>querySelectorAll()</strong>
+      <div class="query-all">
+        1. Access this by using <strong>querySelectorAll()</strong>
       </div>
     </div>
   </body>

@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+}
+h1 {
+  color: rgb(101, 7, 239);
+}
+button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  width: 300px;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
