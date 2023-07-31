@@ -25,6 +25,25 @@ p {
   border-radius: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+a::before {
+  content: "· ";
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+a:hover {
+  /* color: #cddafd; */
+  transition: 0.5s;
+  /* border: solid black 1px; */
+  margin-left: 1rem;
+}
+
 h1.heading::before {
   content: "*";
 }
