@@ -17,9 +17,9 @@ p {
   border-radius: 5px;
 }
 
-.elements {
-  border: none;
-}
+/* .elements { */
+/*   border: none; */
+/* } */
 
 #first-parent {
   border: solid 5px #4a4e69;
