@@ -5,7 +5,8 @@ html {
 body {
   max-width: 500px;
   margin-inline: auto;
-  background-color: #fff1e6;
+  background-color: #fbe9ec;
+  color: #4a4e69;
 }
 
 div,
@@ -21,27 +22,30 @@ p {
 }
 
 #first-parent {
-  border: solid 1px black;
+  border: solid 5px #4a4e69;
   border-radius: 0;
+  color: #4a4e69;
 }
 
 a {
   text-decoration: none;
-  color: black;
-  transition: 0.5s;
+  color: #4a4e69;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #22223b;
+  transition: 0.4s;
+  border: 1px solid #4a4e69;
+
+  padding: 1rem 0.25rem;
+  margin-left: 1rem;
 }
 
 a::before {
   content: "· ";
   font-size: 25px;
   vertical-align: middle;
-}
-
-a:hover {
-  /* color: #cddafd; */
-  transition: 0.5s;
-  /* border: solid black 1px; */
-  margin-left: 1rem;
 }
 
 h1.heading::before {

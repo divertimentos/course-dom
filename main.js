@@ -25,12 +25,12 @@ function changeBackgroundByClass(className, color) {
 }
 
 function changeBackgroundByTagName(tagName, color) {
-  const tagElements = document.getElementsByTagName("p");
+  const tagElements = document.getElementsByTagName(tagName);
   for (let i = 0; i < tagElements.length; i++) {
     tagElements[i].style.backgroundColor = color;
   }
 }
 
-changeBackgroundById("header", "#EAE4E9");
-changeBackgroundByClass("header", "#BEE1E6");
-changeBackgroundByTagName("p", "#FAD2E1");
+changeBackgroundById("header", "#9CC0EB");
+changeBackgroundByClass("header", "#EEB3C6");
+changeBackgroundByTagName("p", "#F2B4B8");
