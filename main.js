@@ -1,11 +1,12 @@
+// setTimeout()
 function newWindow() {
   let url = "https://dictionary.com/browse/shivoo?s=t";
   window.open(url, "", "width=500, height=800");
-  // close the new window after 5 seconds:
-  // WARNING: It doesn't work in Firefox
+  // NOTE: It doesn't work in Firefox
 
   setTimeout(() => {
     window.close(this);
+    // close the new window after 5 seconds:
   }, 5000);
 }
 
@@ -15,11 +16,21 @@ function changeBackgroundById(idName, color) {
   header.style.backgroundColor = color;
 }
 
-changeBackgroundById("header", "cornflowerblue");
-
+// getElementsByClassName
 function changeBackgroundByClass(className, color) {
-  const header = document.getElementsByClassName(className);
-  console.log(header);
+  const classElements = document.getElementsByClassName(className);
+  for (let i = 0; i < classElements.length; i++) {
+    classElements[i].style.backgroundColor = color;
+  }
 }
 
-changeBackgroundByClass("header", "orange");
+function changeBackgroundByTagName(tagName, color) {
+  const tagElements = document.getElementsByTagName("p");
+  for (let i = 0; i < tagElements.length; i++) {
+    tagElements[i].style.backgroundColor = color;
+  }
+}
+
+changeBackgroundById("header", "#EAE4E9");
+changeBackgroundByClass("header", "#BEE1E6");
+changeBackgroundByTagName("p", "#FAD2E1");
