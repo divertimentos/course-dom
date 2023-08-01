@@ -24,6 +24,7 @@ function changeBackgroundByClass(className, color) {
   }
 }
 
+// getElementsByTagName
 function changeBackgroundByTagName(tagName, color) {
   const tagElements = document.getElementsByTagName(tagName);
   for (let i = 0; i < tagElements.length; i++) {
@@ -31,6 +32,24 @@ function changeBackgroundByTagName(tagName, color) {
   }
 }
 
+// querySelector
+function changeBackgroundByQuerySelector(targetName, color) {
+  const queryElement = document.querySelector(targetName);
+  queryElement.style.backgroundColor = color;
+}
+
+function changeBackgroundByQuerySelectorAll(targetName, color) {
+  const queryElement = document.querySelectorAll(targetName);
+  queryElement.forEach((elem) => {
+    elem.style.backgroundColor = color;
+  });
+  // for (let i = 0; i < queryElement.length; i++) {
+  //   queryElement[i].style.backgroundColor = color;
+  // }
+}
+
 changeBackgroundById("header", "#9CC0EB");
 changeBackgroundByClass("header", "#EEB3C6");
 changeBackgroundByTagName("p", "#F2B4B8");
+changeBackgroundByQuerySelector("#query", "green");
+changeBackgroundByQuerySelectorAll(".query-all", "pink");
