@@ -3,10 +3,15 @@ html {
 }
 
 body {
-  max-width: 500px;
+  max-width: 650px;
   margin-inline: auto;
   background-color: #fbe9ec;
   color: #4a4e69;
+}
+
+.elements {
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 div,
@@ -17,14 +22,33 @@ p {
   border-radius: 5px;
 }
 
-/* .elements { */
-/*   border: none; */
+/* #list-container { */
+/*   border: solid purple 1px; */
 /* } */
 
 #first-parent {
   border: solid 5px #4a4e69;
   border-radius: 0;
   color: #4a4e69;
+  font-size: 32px;
+}
+
+ol li {
+  padding-left: 0;
+  margin-left: 2rem;
+  list-style: upper-roman;
+  h2 {
+    font-size: 24px;
+    /* text-align: center; */
+  }
+}
+
+ol li::marker {
+  font-size: 24px;
+}
+
+ol li:nth-child(n + 1) {
+  margin-bottom: 1rem;
 }
 
 a {
@@ -36,7 +60,6 @@ a {
 a:hover {
   color: #22223b;
   transition: 0.4s;
-  border: 1px solid #4a4e69;
 
   padding: 1rem 0.25rem;
   margin-left: 1rem;
@@ -52,12 +75,25 @@ h1.heading::before {
   content: "*";
 }
 
+strong,
+h4,
+h3 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+p,
+h3,
+h4,
+span {
+  color: #4a4e69;
+}
+
 p::first-line {
-  /* color: red; */
 }
 
 p::after {
-  /* content: url("./public/vite.svg"); */
+  content: url("./public/vite.svg");
 }
 
 .hierarchy,

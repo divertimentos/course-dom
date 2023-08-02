@@ -43,13 +43,10 @@ function changeBackgroundByQuerySelectorAll(targetName, color) {
   queryElement.forEach((elem) => {
     elem.style.backgroundColor = color;
   });
-  // for (let i = 0; i < queryElement.length; i++) {
-  //   queryElement[i].style.backgroundColor = color;
-  // }
 }
 
 changeBackgroundById("header", "#9CC0EB");
 changeBackgroundByClass("header", "#EEB3C6");
-changeBackgroundByTagName("p", "#F2B4B8");
-changeBackgroundByQuerySelector("#query", "green");
-changeBackgroundByQuerySelectorAll(".query-all", "pink");
+changeBackgroundByTagName("p", "#BADFD1");
+changeBackgroundByQuerySelector("#query", "#C9CEDE");
+changeBackgroundByQuerySelectorAll(".query-all", "#ACCCF1");
