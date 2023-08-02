@@ -41,6 +41,10 @@ ol li {
     font-size: 24px;
     /* text-align: center; */
   }
+
+  h1 {
+    font-size: 32px;
+  }
 }
 
 ol li::marker {
@@ -65,7 +69,7 @@ a:hover {
   margin-left: 1rem;
 }
 
-a::before {
+div > a::before {
   content: "· ";
   font-size: 25px;
   vertical-align: middle;
@@ -96,9 +100,10 @@ p::after {
   content: url("./public/vite.svg");
 }
 
-.hierarchy,
-.weird,
-.timeout,
-.acessing {
-  display: none;
-}
+/* .hierarchy, */
+/* .weird, */
+/* .timeout, */
+/* .acessing, */
+/* .elements { */
+/*   display: none; */
+/* } */

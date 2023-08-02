@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>What are Nodes</title>
+    <link rel="stylesheet" type="" href="josh-reset.css" />
+  </head>
+  <body>
+    <h1><a href="index.html"> What are Nodes </a></h1>
+    <h1>This is an element node</h1>
+    And this is a text node, all by its lonesome self.
+    <!-- well, as you guessed, this is a Comment Node -->
+    <p>And this is also an Element Node</p>
+
+    <h2>Nodes descriptions</h2>
+    <ul>
+      <li>
+        <p>
+          <strong> ELEMENT_NODE </strong>: most simple. Just an element like p
+          and h1, divs etc
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>TEXT_NODE</strong>: The actual text. No React a gente costuma
+          chamar de "children". A definição de children é mais ampla, mas é mais
+          pra demonstrar que o texto dentro das tags é um TEXT_NODE.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>CDATA_SECTION_NODE</strong>: "don't worry about them".
+          "Character Data not parsed by the parser". OK!
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>PROCESSING_INSTRUCTION_NODE</strong>: Used in XML to embed
+          application-specific instructions
+        </p>
+      </li>
+      <li>
+        <p><strong>COMMENT_NODE</strong>: dã.</p>
+      </li>
+      <li>
+        <p>
+          <strong>DOCUMENT_NODE</strong>: the root <code>document</code> node
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>DOCUMENT_TYPE_NODE</strong>: Also simple. Just the
+          &lt;!DOCTYPE html&gt; declaration
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>DOCUMENT_FRAGMENT_NODE</strong>: A DocumentFragment node is a
+          lightweight document object. Sometimes you may want to extract a
+          portion of the documents tree and create a new fragment.
+        </p>
+      </li>
+    </ul>
+    <h3>The most common Nodes are:</h3>
+    <ol>
+      <li>Document Node</li>
+      <li>Element Nodes</li>
+      <li>Text Nodes</li>
+      <li>Coment Nodes</li>
+    </ol>
+    <p>Ok, fair enough. Foi o que imaginei mesmo.</p>
+  </body>
+</html>
