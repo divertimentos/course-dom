@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  max-width: 650px;
+  max-width: 768px;
   margin-inline: auto;
   background-color: #fbe9ec;
   color: #4a4e69;
@@ -38,7 +38,6 @@ ol {
 }
 
 ol li {
-  /* list-style: upper-roman; */
   list-style: none;
   h2 {
     padding-left: 0.5rem;
@@ -56,38 +55,18 @@ a {
 }
 
 a:hover {
-  color: #22223b;
+  color: #8d92af;
   transition: 0.4s;
 
   padding: 1rem 0.25rem;
   margin-left: 1rem;
 }
 
-/* div > a::before { */
-/*   content: "· "; */
-/*   font-size: 25px; */
-/*   vertical-align: middle; */
-/*   border: solid 1px red; */
-/* } */
-
-/* h1.heading::before { */
-/*   content: "********"; */
-/* } */
-
-/* strong, */
-/* h4, */
-/* h3 { */
-/*   font-weight: bold; */
-/*   margin-bottom: 1.5rem; */
-/* } */
-
-/* p, */
-/* h3, */
-/* h4, */
-/* span { */
-/*   color: #4a4e69; */
-/* } */
-/**/
+div > a::before {
+  content: "·";
+  font-size: 30px;
+  vertical-align: middle;
+}
 
 p::first-line {
 }
