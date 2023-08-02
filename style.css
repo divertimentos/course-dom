@@ -14,6 +14,11 @@ body {
   margin-bottom: 1rem;
 }
 
+#list-container {
+  border: solid 5px #4a4e69;
+  border-radius: 0%;
+}
+
 div,
 p {
   padding: 0.5rem;
@@ -22,37 +27,26 @@ p {
   border-radius: 5px;
 }
 
-/* #list-container { */
-/*   border: solid purple 1px; */
-/* } */
-
 #first-parent {
   border: solid 5px #4a4e69;
   border-radius: 0;
   color: #4a4e69;
-  font-size: 32px;
+}
+
+ol {
+  padding-left: 0;
 }
 
 ol li {
-  padding-left: 0;
-  margin-left: 2rem;
-  list-style: upper-roman;
+  /* list-style: upper-roman; */
+  list-style: none;
   h2 {
+    padding-left: 0.5rem;
+  }
+
+  &::marker {
     font-size: 24px;
-    /* text-align: center; */
   }
-
-  h1 {
-    font-size: 32px;
-  }
-}
-
-ol li::marker {
-  font-size: 24px;
-}
-
-ol li:nth-child(n + 1) {
-  margin-bottom: 1rem;
 }
 
 a {
@@ -69,29 +63,31 @@ a:hover {
   margin-left: 1rem;
 }
 
-div > a::before {
-  content: "· ";
-  font-size: 25px;
-  vertical-align: middle;
-}
+/* div > a::before { */
+/*   content: "· "; */
+/*   font-size: 25px; */
+/*   vertical-align: middle; */
+/*   border: solid 1px red; */
+/* } */
 
-h1.heading::before {
-  content: "*";
-}
+/* h1.heading::before { */
+/*   content: "********"; */
+/* } */
 
-strong,
-h4,
-h3 {
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
+/* strong, */
+/* h4, */
+/* h3 { */
+/*   font-weight: bold; */
+/*   margin-bottom: 1.5rem; */
+/* } */
 
-p,
-h3,
-h4,
-span {
-  color: #4a4e69;
-}
+/* p, */
+/* h3, */
+/* h4, */
+/* span { */
+/*   color: #4a4e69; */
+/* } */
+/**/
 
 p::first-line {
 }
