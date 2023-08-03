@@ -4,11 +4,11 @@
 
 code {
   color: #4a4e69;
-  border: 1px solid #4a4e69;
+  border: 1px transparent #4a4e69;
   background-color: #f1cbd3;
-  padding: 1px 5px;
-  margin: auto 1px;
-  border-radius: 5px;
+  padding: 2px 5px;
+  margin: auto 2px;
+  border-radius: 6px;
 
   strong {
     background-color: #f1cbd3;

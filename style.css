@@ -31,6 +31,12 @@ p {
   border: solid 5px #4a4e69;
   border-radius: 0;
   color: #4a4e69;
+
+  transition: 0.2s;
+  &:hover {
+    color: #8d92af;
+    transition: 0.2s;
+  }
 }
 
 ol {
