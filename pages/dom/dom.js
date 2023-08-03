@@ -1,9 +1,7 @@
 // getElementById
 function changeBackgroundById(idName, color) {
   const elem = document.getElementById(idName);
-  elem.style.color = color;
-  elem.style.textTransform = "uppercase";
-  elem.style.fontStyle = "italic";
+  elem.style.backgroundColor = color;
 }
 
 // getElementsByClassName

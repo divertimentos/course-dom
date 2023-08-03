@@ -9,21 +9,22 @@
     <link rel="stylesheet" type="" href="../../style.css" />
     <link rel="stylesheet" type="" href="dom.css" />
     <script src="../../main.js" async></script>
+    <script src="dom.js" async></script>
   </head>
 
   <body>
     <div id="first-parent">
-      <h1><a href="../../index.html">DOM</a></h1>
+      <h1><a href="../../index.html"> DOM</a></h1>
     </div>
     <div id="list-container" class="elements">
-      <h3>Accessing Elements</h3>
-      <h4>Using the ID (#header)</h4>
+      <h2>Acessing elements in the DOM</h2>
       <div id="header">
+        <h4>Using the ID (#header)</h4>
         <span>Access this using <strong>getElementById()</strong></span>
       </div>
 
-      <h4>Using the Class (.header)</h4>
       <div>
+        <h4>Using the Class (.header)</h4>
         <a href="tests/test_skeleton.html">Exercise I</a>
       </div>
       <div class="header">
@@ -39,29 +40,35 @@
         </span>
       </div>
 
-      <h4>Using the Tag</h4>
-      <p>1. Access this by using <strong>getElementByTagName()</strong></p>
-      <p>2. Access this by using <strong>getElementByTagName()</strong></p>
-
-      <h4>Using the Query Selector (with ID of 'query')</h4>
-
-      <p>He said he's sick of theory. Goddam!</p>
-
-      <div id="query">
-        <span> 1. Access this by using <strong>querySelector()</strong> </span>
+      <div>
+        <h4>Using the Tag</h4>
+        <p>1. Access this by using <strong>getElementByTagName()</strong></p>
+        <p>2. Access this by using <strong>getElementByTagName()</strong></p>
       </div>
 
-      <h4>Using the Query Selector All (with class of 'query-all')</h4>
-      <div class="query-all">
-        <span>
-          1. Access this by using <strong>querySelectorAll()</strong>
-        </span>
-      </div>
+      <div>
+        <h4>Using the Query Selector (with ID of 'query')</h4>
 
-      <div class="query-all">
-        <span>
-          2. Access this by using <strong>querySelectorAll()</strong>
-        </span>
+        <p>He said he's sick of theory. Goddam!</p>
+
+        <div id="query">
+          <span>
+            1. Access this by using <strong>querySelector()</strong>
+          </span>
+        </div>
+
+        <div class="query-all">
+          <h4>Using the Query Selector All (with class of 'query-all')</h4>
+          <span>
+            1. Access this by using <strong>querySelectorAll()</strong>
+          </span>
+        </div>
+
+        <div class="query-all">
+          <span>
+            2. Access this by using <strong>querySelectorAll()</strong>
+          </span>
+        </div>
       </div>
     </div>
   </body>
