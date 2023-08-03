@@ -4,7 +4,6 @@
     <title>DOM Course</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" type="" href="reset.css" /> -->
     <link rel="stylesheet" type="" href="josh-reset.css" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="./public/vite.svg" />
@@ -19,125 +18,32 @@
     <div id="list-container">
       <ol class="ordered-list" type="I">
         <li>
-          <h2>Let's start with Hierarchy</h2>
-        </li>
-
-        <div class="hierarchy">
-          <p>
-            Did you know what the default width of an input is... 20 characters?
-          </p>
-          <form>
-            First Name: <br />
-            <input type="text" name="" value="" />
-            <br />
-
-            <form>
-              <input type="checkbox" name="happy" value="happy" checked /> I am
-              happy
-              <br />
-              <input type="checkbox" name="sad" value="sad" /> I am sad <br />
-              <input type="submit" name="submit" value="submit" />
-            </form>
-          </form>
-        </div>
-
-        <li>
-          <h2 class="heading">Pseudo-elements are weird</h2>
-        </li>
-
-        <div class="weird">
-          <p>
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-            voluptate dolor minim nulla est proident. Nostrud officia pariatur
-            ut officia.
-          </p>
-        </div>
-
-        <li>
-          <h2>Let's build a setTimeout() function</h2>
-          <div class="timeout">
-            <h3>Wanna find out what Shivoo means?</h3>
-            <p>
-              To find out, click the button below. The new window will close
-              after 5s
-            </p>
-            <button onclick="newWindow()">Curious?</button>
-          </div>
+          <h2>
+            <a href="pages/hierarchy/hierarchy.html">
+              Let's start with Hierarchy
+            </a>
+          </h2>
         </li>
 
         <li>
-          <h2>Acessing the DOM</h2>
-          <div class="acessing">
-            <h3>Document Object Model</h3>
-          </div>
+          <h2 class="heading">
+            <a href="pages/weird/weird.html"> Pseudo-elements are weird </a>
+          </h2>
         </li>
 
         <li>
-          <h2>Accessing elements in the DOM</h2>
-          <div class="elements">
-            <h3>Accessing Elements</h3>
-            <h4>Using the ID (#header)</h4>
-            <div id="header">
-              <span>Access this using <strong>getElementById()</strong></span>
-            </div>
+          <h2><a href="pages/timeout/timeout.html">setTimeout()</a></h2>
+        </li>
 
-            <h4>Using the Class (.header)</h4>
-            <div>
-              <a href="tests/test_skeleton.html">Exercise I</a>
-            </div>
-            <div class="header">
-              <span>
-                1. Access this by using
-                <strong>getElementsByClassName()</strong>
-              </span>
-            </div>
-            <div class="header">
-              <span>
-                2. Access this by using
-                <strong>getElementsByClassName()</strong>
-              </span>
-            </div>
-
-            <h4>Using the Tag</h4>
-            <p>
-              1. Access this by using <strong>getElementByTagName()</strong>
-            </p>
-            <p>
-              2. Access this by using <strong>getElementByTagName()</strong>
-            </p>
-
-            <h4>Using the Query Selector (with ID of 'query')</h4>
-
-            <p>He said he's sick of theory. Goddam!</p>
-
-            <div id="query">
-              <span>
-                1. Access this by using <strong>querySelector()</strong>
-              </span>
-            </div>
-
-            <h4>Using the Query Selector All (with class of 'query-all')</h4>
-            <div class="query-all">
-              <span>
-                1. Access this by using <strong>querySelectorAll()</strong>
-              </span>
-            </div>
-
-            <div class="query-all">
-              <span>
-                2. Access this by using <strong>querySelectorAll()</strong>
-              </span>
-            </div>
-          </div>
+        <li>
+          <h2>
+            <a href="pages/dom/dom.html">Accessing elements in the DOM</a>
+          </h2>
         </li>
         <li>
           <h2>
-            <a href="nodes.html">Nodes </a>
+            <a href="pages/nodes.html">Nodes </a>
           </h2>
-          <div class="nodes"></div>
         </li>
       </ol>
     </div>
