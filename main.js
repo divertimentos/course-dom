@@ -1,3 +1,9 @@
+// Test
+
+function isWorking() {
+  console.log("Funcionanderson!!!");
+}
+
 // setTimeout()
 function newWindow() {
   let url = "https://dictionary.com/browse/shivoo?s=t";

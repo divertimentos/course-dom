@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>What are Nodes</title>
-    <!-- <link rel="stylesheet" type="" href="josh-reset.css" /> -->
-    <!-- <link rel="stylesheet" type="" href="nodes.css" /> -->
 
     <link rel="stylesheet" type="" href="../../josh-reset.css" />
     <link rel="stylesheet" type="" href="../../style.css" />
@@ -13,138 +11,145 @@
     <script src="nodes.js" async></script>
   </head>
   <body>
-    <h1><a href="../../index.html"> What are Nodes </a></h1>
-    <h2>This is an element node</h2>
-    And this is a text node, all by its lonesome self.
-    <!--Well, as you guessed, this is a Comment Node! -->
-    <p>And this is also an Element Node</p>
-
-    <h2 onclick="hideNodes()">Nodes descriptions (click me to hide)</h2>
-    <div class="hidable">
-      <ul>
-        <li>
-          <p>
-            <strong> ELEMENT_NODE </strong>: most simple. Just an element like p
-            and h1, divs etc
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>TEXT_NODE</strong>: The actual text. No React a gente
-            costuma chamar de "children". A definição de children é mais ampla,
-            mas é mais pra demonstrar que o texto dentro das tags é um
-            TEXT_NODE.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>CDATA_SECTION_NODE</strong>: "don't worry about them".
-            "Character Data not parsed by the parser". OK!
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>PROCESSING_INSTRUCTION_NODE</strong>: Used in XML to embed
-            application-specific instructions
-          </p>
-        </li>
-        <li>
-          <p><strong>COMMENT_NODE</strong>: dã.</p>
-        </li>
-        <li>
-          <p>
-            <strong>DOCUMENT_NODE</strong>: the root <code>document</code> node
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>DOCUMENT_TYPE_NODE</strong>: Also simple. Just the
-            &lt;!DOCTYPE html&gt; declaration
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>DOCUMENT_FRAGMENT_NODE</strong>: A DocumentFragment node is
-            a lightweight document object. Sometimes you may want to extract a
-            portion of the documents tree and create a new fragment.
-          </p>
-        </li>
-      </ul>
-      <h3>The most common Nodes are:</h3>
-      <ol>
-        <li>Document Node</li>
-        <li>Element Nodes</li>
-        <li>Text Nodes</li>
-        <li>Coment Nodes</li>
-      </ol>
-      <p>Ok, fair enough. Foi o que imaginei mesmo.</p>
-      <h2>Family Tree</h2>
-      <p>
-        Cada node tem um <code>nodeType</code>, um <code>nodeName</code> e um
-        <code>nodeValue</code>. São suas propriedades intrínsecas.
-      </p>
-      <h4>Tem uma coisa que o Clyde chamdou de "Family Dynamics":</h4>
-      <p>
-        É basicamente os parents, children e siblings. Tudo que existe são
-        relações de pais, filhos e irmãos
-      </p>
+    <div id="first-parent">
+      <h1><a href="../../index.html"> What are Nodes </a></h1>
     </div>
-    <h2>Recap (HTMLCollection vs NodeList)</h2>
-    <div>
-      <ul>
-        <li>
-          <code>document.getElementById()</code>: retorna o objeto do elemento
-        </li>
-        <li>
-          <code>document.getElement<strong>s</strong>ByClassName()</code>:
-          retorna um <strong>HTMLCollection</strong>
-        </li>
-        <li>
-          <code>document.getElementsByTagName()</code>: retorna um
-          <strong> HTMLCollection </strong>
-        </li>
-        <li>
-          <code>document.querySelector()</code>: retorna um
-          <strong>NodeList</strong>
-        </li>
-        <li>
-          <code>document.querySelectorAll()</code>: retorna um
-          <strong>NodeList</strong>
-        </li>
-      </ul>
-      <div>
-        <p>
-          É aquela, um <code>NodeList</code> é literalmente uma coleção com
-          nodes dentro, ou seja, tudo que for um
-          <strong>NodeType</strong> (texto, comentário, elemento etc.). Por
-          outro lado, um <code>HTMLCollection</code> só pode conter um
-          <em>element node</em>. Ou seja, o HTMLCollection só é capaz de mostrar
-          um dos tipos que o NodeList é capaz, talvez o mais comum de todos.
-        </p>
-        <p>Mais duas diferenças entre eles dois:</p>
+    <div id="list-container">
+      <h2>This is an element node</h2>
+      And this is a text node, all by its lonesome self.
+      <!--Well, as you guessed, this is a Comment Node! -->
+      <p>And this is also an Element Node</p>
+
+      <h2 onclick="hideNodes()">Nodes descriptions (click me to hide)</h2>
+      <div class="hidable">
         <ul>
           <li>
-            <strong>HTMLCollections</strong> podem ser acessadas por nome, id ou
-            índice
+            <p>
+              <strong> ELEMENT_NODE </strong>: most simple. Just an element like
+              p and h1, divs etc
+            </p>
           </li>
           <li>
-            <strong>NodeLists</strong> só podem ser acessadas pelo seu índice
+            <p>
+              <strong>TEXT_NODE</strong>: The actual text. No React a gente
+              costuma chamar de "children". A definição de children é mais
+              ampla, mas é mais pra demonstrar que o texto dentro das tags é um
+              TEXT_NODE.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>CDATA_SECTION_NODE</strong>: "don't worry about them".
+              "Character Data not parsed by the parser". OK!
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>PROCESSING_INSTRUCTION_NODE</strong>: Used in XML to embed
+              application-specific instructions
+            </p>
+          </li>
+          <li>
+            <p><strong>COMMENT_NODE</strong>: dã.</p>
+          </li>
+          <li>
+            <p>
+              <strong>DOCUMENT_NODE</strong>: the root
+              <code>document</code> node
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>DOCUMENT_TYPE_NODE</strong>: Also simple. Just the
+              &lt;!DOCTYPE html&gt; declaration
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>DOCUMENT_FRAGMENT_NODE</strong>: A DocumentFragment node
+              is a lightweight document object. Sometimes you may want to
+              extract a portion of the documents tree and create a new fragment.
+            </p>
           </li>
         </ul>
+        <h3>The most common Nodes are:</h3>
+        <ol>
+          <li>Document Node</li>
+          <li>Element Nodes</li>
+          <li>Text Nodes</li>
+          <li>Coment Nodes</li>
+        </ol>
+        <p>Ok, fair enough. Foi o que imaginei mesmo.</p>
+        <h2>Family Tree</h2>
         <p>
-          Ok, agora o Clyde vai falar a maior diferença entre eles, que ele
-          enrolou até agora pra falar:
+          Cada node tem um <code>nodeType</code>, um <code>nodeName</code> e um
+          <code>nodeValue</code>. São suas propriedades intrínsecas.
         </p>
+        <h4>Tem uma coisa que o Clyde chamdou de "Family Dynamics":</h4>
         <p>
-          <strong>HTMLCollections</strong> são o que ele chamou de listas
-          <em>live</em>, enquanto as <strong>NodeLists</strong> são, geralmente,
-          listas <strong>estáticas</strong>.
+          É basicamente os parents, children e siblings. Tudo que existe são
+          relações de pais, filhos e irmãos
         </p>
-        <p>
-          <strong
-            >P.S.: acho que o que ele quis dizer com "live" é "mutável".</strong
-          >
-        </p>
+      </div>
+      <h2>Recap (HTMLCollection vs NodeList)</h2>
+      <div>
+        <ul>
+          <li>
+            <code>document.getElementById()</code>: retorna o objeto do elemento
+          </li>
+          <li>
+            <code>document.getElement<strong>s</strong>ByClassName()</code>:
+            retorna um <strong>HTMLCollection</strong>
+          </li>
+          <li>
+            <code>document.getElementsByTagName()</code>: retorna um
+            <strong> HTMLCollection </strong>
+          </li>
+          <li>
+            <code>document.querySelector()</code>: retorna um
+            <strong>NodeList</strong>
+          </li>
+          <li>
+            <code>document.querySelectorAll()</code>: retorna um
+            <strong>NodeList</strong>
+          </li>
+        </ul>
+        <div>
+          <p>
+            É aquela, um <code>NodeList</code> é literalmente uma coleção com
+            nodes dentro, ou seja, tudo que for um
+            <strong>NodeType</strong> (texto, comentário, elemento etc.). Por
+            outro lado, um <code>HTMLCollection</code> só pode conter um
+            <em>element node</em>. Ou seja, o HTMLCollection só é capaz de
+            mostrar um dos tipos que o NodeList é capaz, talvez o mais comum de
+            todos.
+          </p>
+          <p>Mais duas diferenças entre eles dois:</p>
+          <ul>
+            <li>
+              <strong>HTMLCollections</strong> podem ser acessadas por nome, id
+              ou índice
+            </li>
+            <li>
+              <strong>NodeLists</strong> só podem ser acessadas pelo seu índice
+            </li>
+          </ul>
+          <p>
+            Ok, agora o Clyde vai falar a maior diferença entre eles, que ele
+            enrolou até agora pra falar:
+          </p>
+          <p>
+            <strong>HTMLCollections</strong> são o que ele chamou de listas
+            <em>live</em>, enquanto as <strong>NodeLists</strong> são,
+            geralmente, listas <strong>estáticas</strong>.
+          </p>
+          <p>
+            <strong
+              >P.S.: acho que o que ele quis dizer com "live" é
+              "mutável".</strong
+            >
+          </p>
+        </div>
       </div>
     </div>
   </body>

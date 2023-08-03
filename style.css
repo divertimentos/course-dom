@@ -78,13 +78,5 @@ p::first-line {
 }
 
 p::after {
-  content: url("./public/vite.svg");
+  content: url("vite.svg");
 }
-
-/* .hierarchy, */
-/* .weird, */
-/* .timeout, */
-/* .acessing, */
-/* .elements { */
-/*   display: none; */
-/* } */
