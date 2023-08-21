@@ -1,11 +1,27 @@
-* {
-  border: 2px solid #dedede;
+main {
+  max-width: 600px;
+  font-family: sans-serif;
+  color: #333;
+  border: solid teal 5px;
+  height: 100vh;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  border: 3px solid #dedede;
+  margin-block: 15px;
+  margin-inline: 30px;
+}
+
+h2,
+p {
+  border: 3px solid #dedede;
   padding: 15px;
   margin: 15px;
 }
 
-body {
-  max-width: 600px;
-  font-family: sans-serif;
-  color: #333;
+div {
+  margin: 15px auto;
+  padding: 15px;
 }
