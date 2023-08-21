@@ -20,6 +20,7 @@ body {
 }
 
 div,
+main,
 p {
   padding: 0.5rem;
   margin: 1rem 0;

@@ -1,22 +1,13 @@
 main {
-  max-width: 600px;
   font-family: sans-serif;
-  color: #333;
   border: solid teal 5px;
   height: 100vh;
   margin: auto;
 }
 
-h1 {
-  text-align: center;
-  border: 3px solid #dedede;
-  margin-block: 15px;
-  margin-inline: 30px;
-}
-
 h2,
 p {
-  border: 3px solid #dedede;
+  border: 3px solid #4a4e69;
   padding: 15px;
   margin: 15px;
 }
