@@ -49,6 +49,6 @@ function elementCounter() {
   // Return the number of Element nodes within the <ul> tag
   answerElement.appendChild(elementChild);
 
-  Return; // Return the number of nodes (any type) within the <ul> tag
+  // Return the number of nodes (any type) within the <ul> tag
   answerNode.appendChild(nodeChild);
 }
