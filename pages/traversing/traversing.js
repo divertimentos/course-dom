@@ -1,1 +1,2 @@
-document.getElementById("wrapper").style.backgroundColor = "blue";
+document.getElementById("wrapper").parentNode.parentNode.style.backgroundColor =
+  "cornflowerblue";
