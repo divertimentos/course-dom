@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="" href="traversing.css" />
     <script src="traversing.js" async></script>
   </head>
-  <body>
+  <body onload="elementCounter();nodeCounter()">
     <div id="first-parent">
       <h1><a href="../../index.html"> Traversing the DOM </a></h1>
     </div>
@@ -23,6 +23,43 @@
       <div>
         <h2 class="joke">Joke of the Day</h2>
         <p>What do you call fish with no eyes? ... "fsh"</p>
+      </div>
+      <div>
+        <h2>childNodes vs children</h2>
+        <div class="divider-container">
+          <div class="divider-list">
+            <h3>childNodes</h3>
+            <p>Returns a NodeList</p>
+            <p>
+              <code><strong>.childNodes</strong></code> return all node children
+            </p>
+          </div>
+          <div class="vertical"></div>
+          <div class="divider-list">
+            <h3>children</h3>
+            <p>Returns an HTMLCollection</p>
+            <p>
+              <code><strong>.children</strong></code> is a property of an
+              element
+            </p>
+            <p>Only elements have <code>.children</code></p>
+            <p>These <code>.children</code>are all of type Element</p>
+          </div>
+        </div>
+
+        <div>
+          <ul id="item-ul">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </ul>
+          <div class="answer-container">
+            <p id="answer-element" class="answer"></p>
+            <p id="answer-node" class="answer"></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

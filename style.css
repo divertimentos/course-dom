@@ -78,6 +78,19 @@ div > a::before {
 p::first-line {
 }
 
-p::after {
-  content: url("vite.svg");
+/* p::after { */
+/*   content: url("vite.svg"); */
+/* } */
+
+code {
+  color: #4a4e69;
+  border: 1px transparent #4a4e69;
+  background-color: #f1cbd3;
+  padding: 2px 5px;
+  margin: auto 2px;
+  border-radius: 6px;
+
+  strong {
+    background-color: #f1cbd3;
+  }
 }

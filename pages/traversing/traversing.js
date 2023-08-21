@@ -17,3 +17,38 @@ for (let i = 0; i < bodyChildren.length; i++) {
   let child = bodyChildren[i];
   child.style.backgroundColor = "#9CC0EB";
 }
+
+let ul = document.getElementsByTagName("ul")[0];
+ul.style.paddingLeft = "0";
+ul.firstElementChild.style.backgroundColor = "#BADFD1";
+
+let ulChildren = ul.children;
+for (let i = 0; i < ulChildren.length; i++) {
+  let li = ulChildren[i];
+  li.style.border = "3px solid #4a4e69";
+  li.style.padding = "5px";
+  li.style.marginBottom = "5px";
+  li.style.listStyleType = "none";
+}
+
+function elementCounter() {
+  let newUl = document.querySelector("#item-ul");
+
+  let answerElement = document.querySelector("#answer-element");
+  let answerNode = document.querySelector("#answer-node");
+
+  let newUlChildren = newUl.children;
+  let newUlChildNodes = newUl.childNodes;
+
+  let newUlChildrenLength = `Children Length: ${newUlChildren.length}`;
+  let newUlChildNodesLength = `ChildNodes Length: ${newUlChildNodes.length}`;
+
+  let elementChild = document.createTextNode(newUlChildrenLength);
+  let nodeChild = document.createTextNode(newUlChildNodesLength);
+
+  // Return the number of Element nodes within the <ul> tag
+  answerElement.appendChild(elementChild);
+
+  Return; // Return the number of nodes (any type) within the <ul> tag
+  answerNode.appendChild(nodeChild);
+}

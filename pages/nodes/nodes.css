@@ -2,19 +2,19 @@
   background-color: #fbe9ec;
 }
 
-code {
-  color: #4a4e69;
-  border: 1px transparent #4a4e69;
-  background-color: #f1cbd3;
-  padding: 2px 5px;
-  margin: auto 2px;
-  border-radius: 6px;
-
-  strong {
-    background-color: #f1cbd3;
-  }
-}
-
+/* code { */
+/*   color: #4a4e69; */
+/*   border: 1px transparent #4a4e69; */
+/*   background-color: #f1cbd3; */
+/*   padding: 2px 5px; */
+/*   margin: auto 2px; */
+/*   border-radius: 6px; */
+/**/
+/*   strong { */
+/*     background-color: #f1cbd3; */
+/*   } */
+/* } */
+/**/
 .hidable {
   display: none;
 }
