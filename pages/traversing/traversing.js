@@ -55,7 +55,13 @@ function elementCounter() {
 
 let siblingUl = document.getElementById("sibling");
 let middle = siblingUl.children[1];
+for (let i = 0; i < siblingUl.children.length; i++) {
+  let child = siblingUl.children[i];
+  child.style.border = "3px solid #4a4e69";
+  child.style.marginBottom = "0.5rem";
+}
 
 middle.previousElementSibling.style.backgroundColor = "#F2B4B8";
-middle.style.backgroundColor = "cornflowerblue";
+middle.style.backgroundColor = "#ACCCF1";
+middle.style.border = " #4a4e69 3px solid";
 middle.nextElementSibling.style.backgroundColor = "#BADFD1";
