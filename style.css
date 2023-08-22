@@ -46,13 +46,14 @@ ol {
 
 ol li {
   list-style: none;
-  h2 {
-    padding-left: 0.5rem;
-  }
 
   &::marker {
     font-size: 24px;
   }
+}
+
+ol li h2 {
+  padding-left: 0.5rem;
 }
 
 a {
@@ -63,7 +64,7 @@ a {
 
 a:hover {
   color: #8d92af;
-  transition: 0.4s;
+  transition: 0.2s;
 
   padding: 1rem 0.25rem;
   margin-left: 1rem;
@@ -78,10 +79,6 @@ div > a::before {
 p::first-line {
 }
 
-/* p::after { */
-/*   content: url("vite.svg"); */
-/* } */
-
 code {
   color: #4a4e69;
   border: 1px transparent #4a4e69;
@@ -89,8 +86,14 @@ code {
   padding: 2px 5px;
   margin: auto 2px;
   border-radius: 6px;
+}
 
-  strong {
-    background-color: #f1cbd3;
+code > strong {
+  background-color: #f1cbd3;
+}
+
+.ordered-list {
+  li {
+    margin-bottom: 0.5rem;
   }
 }
