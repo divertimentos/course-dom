@@ -46,7 +46,8 @@
             <p>These <code>.children</code>are all of type Element</p>
           </div>
         </div>
-
+      </div>
+      <div>
         <h2>childNodes vs children (test)</h2>
         <div>
           <ul id="item-ul">
@@ -60,6 +61,22 @@
             <p id="answer-element" class="answer"></p>
             <p id="answer-node" class="answer"></p>
           </div>
+        </div>
+      </div>
+      <div>
+        <h2>Sibling methods</h2>
+        <p>
+          Tem a diferença entre <code>.previousSibling/nextSibling</code> e
+          <code>.previousElementSibling/nextElementSibling</code>. O primeiro
+          retorna qualquer tipo de nó; já o segundo retorna apenas elementos
+          irmãos daquele tomado como referência.
+        </p>
+        <div>
+          <ul id="sibling">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
         </div>
       </div>
     </div>

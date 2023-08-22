@@ -52,3 +52,10 @@ function elementCounter() {
   // Return the number of nodes (any type) within the <ul> tag
   answerNode.appendChild(nodeChild);
 }
+
+let siblingUl = document.getElementById("sibling");
+let middle = siblingUl.children[1];
+
+middle.previousElementSibling.style.backgroundColor = "#F2B4B8";
+middle.style.backgroundColor = "cornflowerblue";
+middle.nextElementSibling.style.backgroundColor = "#BADFD1";
