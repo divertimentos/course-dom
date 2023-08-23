@@ -96,9 +96,9 @@
         <h2>Por que não usar innerHTML?</h2>
         <p>
           Porque o <code>innerHTML</code>expõe o site a ataques XXS (cross-site
-          scripting), porque JavaScript inline pode ser adicionado a
-          elementoexpõe o site a ataques XXS (cross-site scripting), porque
-          JavaScript inline pode ser adicionado a elementos.
+          scripting), porque JavaScript inline pode ser adicionado a elementos e
+          expõe o site a ataques XXS (cross-site scripting), porque JavaScript
+          inline pode ser adicionado a elementos.
         </p>
       </div>
       <div>
@@ -114,13 +114,43 @@
           <li><code>node.insertBefore()</code></li>
           <li><code>node.replaceChild()</code></li>
         </ul>
-        <h3>node.insertBefore()</h3>
+        <h3>node.insertBefore() e node.removeChild()</h3>
         <p>Recebe dois argumentos:</p>
-        <div>
-          <ol>
+        <div class="functional-div">
+          <ol id="ol-father">
             <li>O elemento que você deseja inserir</li>
-            <li>Uma referência ao irmão cujo qual você deseja preceder</li>
+            <li id="after-before">
+              Uma referência ao irmão cujo qual você deseja preceder
+            </li>
           </ol>
+          <div class="buttons-container">
+            <button class="insert-button" onclick="insertBeforeFunc()" type="">
+              Insert Before The Last
+            </button>
+            <button class="another-button" onclick="removeBeforeFunc()" type="">
+              Do another thing
+            </button>
+          </div>
+        </div>
+
+        <h3>remove()</h3>
+        <div id="removal">
+          <ol id="removal-ol">
+            <li>Item a ser removido 1</li>
+            <li>Item a ser removido 2</li>
+            <li>Item a ser removido 3</li>
+            <li>Item a ser removido 4</li>
+            <li>Item a ser removido 5</li>
+            <li>Item a ser removido 6</li>
+          </ol>
+          <div class="buttons-container">
+            <button class="insert-button" onclick="removeFunc()" type="">
+              Use the .remove() method
+            </button>
+            <button class="insert-button" onclick="restore()" type="">
+              Restore items
+            </button>
+          </div>
         </div>
       </div>
     </div>

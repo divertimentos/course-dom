@@ -5,3 +5,54 @@
 p {
   margin: 0;
 }
+
+#removal {
+  border: 3px solid #4a4e69;
+  display: flex;
+  justify-content: space-between;
+}
+
+#removal > ul > li {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+div:has(> ol) {
+  border: 3px solid #4a4e69;
+}
+
+.functional-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  color: #4a4e69;
+}
+
+.insert-button,
+.another-button {
+  padding: auto;
+  background-color: #f1cbd3;
+  border: none;
+  border: 3px solid #4a4e69;
+  min-height: 60px;
+  max-height: 60px;
+  &:hover {
+    background-color: #f2b4b8;
+    transition: 0.2s;
+  }
+  transition: 0.2s;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  button {
+    margin-bottom: 1rem;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
