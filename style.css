@@ -26,6 +26,7 @@ p {
   padding: 0.5rem;
   border: 1px solid transparent;
   border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
 
 #first-parent {
@@ -41,11 +42,11 @@ p {
   }
 }
 
-ol {
+ul {
   padding-left: 0;
 }
 
-ol li {
+ul li {
   list-style: none;
 
   &::marker {
@@ -53,7 +54,7 @@ ol li {
   }
 }
 
-ol li h2 {
+ul li h2 {
   padding-left: 0.5rem;
 }
 
@@ -93,7 +94,7 @@ code > strong {
   background-color: #f1cbd3;
 }
 
-.ordered-list {
+.unordered-list {
   li {
     margin-bottom: 0.5rem;
   }
