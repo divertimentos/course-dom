@@ -1,17 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Dynamic</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" type="" href="../../josh-reset.css" /> -->
+    <link rel="stylesheet" type="" href="../../style.css" />
+    <link rel="stylesheet" type="" href="dynamic.css" />
+    <script src="dynamic.js" async></script>
   </head>
   <body>
-    <p>
-      Finalmente entendi a diferença entre site esteático e dinâmico. O dinâmico
-      é aquele no qual você injeta JS para modificar o DOM. Por exemplo, como
-      provavelmente iremos fazer aqui, é quando você cria e adiciona elementos
-      usando o JavaScript.
-    </p>
+    <div id="first-parent">
+      <h1><a href="../../index.html">Dynamic</a></h1>
+    </div>
+    <div id="list-container">
+      <div>
+        <h2>document vs Document</h2>
+        <p>
+          <strong>P.S.:</strong>
+          Finalmente entendi a diferença entre site esteático e dinâmico. O
+          dinâmico é aquele no qual você injeta JS para modificar o DOM. Por
+          exemplo, como provavelmente iremos fazer aqui, é quando você cria e
+          adiciona elementos usando o JavaScript.
+        </p>
+
+        <p>
+          A forma mais fácil de criar elementos é usando o
+          <code>createElement()</code>, que fica no <strong>D</strong>ocument
+          (com "D" maiúsculo mesmo).
+        </p>
+
+        <div>
+          <ul>
+            <li>
+              Utilizando o <code>window.document.constructor</code>, descobrimos
+              que o <code>document</code>é construido a partir do construtor
+              <code>HTMLDocument</code>
+            </li>
+            <li>
+              Utilizando o <code>window.document.nodeType</code>, recebemos "9"
+              como resposta, que significa <code>DOCUMENT_NODE</code>
+            </li>
+          </ul>
+          <p>
+            Concluímos então que o construtor <code>HTMLDocument</code>cria o
+            <code>document</code>(com "d" minúsculo). O que é importante, a
+            partir disso, é que <code>DOCUMENT_NODE</code> herda de
+            <code>Document</code> (com "D" maiúsculo).
+          </p>
+          <p>
+            Outra conclusão é a de que <code>document</code>herda de
+            <code>Document</code>.
+          </p>
+          <p>
+            <strong>P.S.:</strong> both Document and HTMLDocument constructors
+            are instantiated by the browser automatically when you load a HTML
+            Document. Tipically the use of theses methods are associated with
+            providing a HTML document to an iframe.
+          </p>
+        </div>
+      </div>
+      <div id="parent">
+        <h2>createElement e appendChild</h2>
+        <p>
+          Como agora sabemos que <code>document</code>herda de
+          <code>Document</code>, que é quem constrói o
+          <code>createElement</code>, podemos utilizar esse método a partir de
+          <code>document</code>:
+          <code>document.createElement("html tag name")</code>
+        </p>
+        <p>
+          Quando criamos esse elemento, precisamos dizer ao DOM em qual posição
+          da árvore inseri-lo. Ele não aparece automaticamente em lugar algum,
+          afinal, para onde ele iria sem uma posição definida?
+        </p>
+        <p>
+          Para inseri-lo, basta escolher um elemento-pai e anexá-lo a esse
+          elemento-pai utilizando o método <code>appendChild()</code>.
+        </p>
+        <p>
+          Logo abaixo de mim tem um parágrafo sem texto, adicionado via JS.
+          Inseri uma borda via CSS para que seja possível visualizá-lo:
+        </p>
+      </div>
+      <div id="content">
+        <h2>textContent</h2>
+        <p>
+          Para adicionar texto a um elemento, utilizamos sua propriedade<code
+            >textContent</code
+          >
+          (confira abaixo):
+        </p>
+      </div>
+      <div>
+        <h2>Por que não usar innerHTML?</h2>
+        <p>
+          Porque o <code>innerHTML</code>expõe o site a ataques XXS (cross-site
+          scripting), porque JavaScript inline pode ser adicionado a
+          elementoexpõe o site a ataques XXS (cross-site scripting), porque
+          JavaScript inline pode ser adicionado a elementos.
+        </p>
+      </div>
+      <div>
+        <h2>Escolhendo onde inserir elementos-filhos</h2>
+        <p>
+          Quando utilizamos o <code>appendChild</code>, o elemento-filho é
+          automaticamente inserido na última posição entre os filhos do pai
+          selecionado. Para ter um controle mais fino sobre isso, temos, na
+          verdade, três métodos:
+        </p>
+        <ul>
+          <li><code>node.appendChild()</code></li>
+          <li><code>node.insertBefore()</code></li>
+          <li><code>node.replaceChild()</code></li>
+        </ul>
+        <h3>node.insertBefore()</h3>
+        <p>Recebe dois argumentos:</p>
+        <div>
+          <ol>
+            <li>O elemento que você deseja inserir</li>
+            <li>Uma referência ao irmão cujo qual você deseja preceder</li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,7 @@
+#parent p:last-child {
+  border: solid 3px #4a4e69;
+}
+
+p {
+  margin: 0;
+}
