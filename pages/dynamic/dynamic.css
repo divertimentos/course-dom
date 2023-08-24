@@ -7,7 +7,8 @@ p {
 }
 
 #removal,
-#clone-container {
+#clone-container,
+#animals-container {
   border: 3px solid #4a4e69;
   display: flex;
   justify-content: space-between;

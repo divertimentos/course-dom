@@ -1,16 +1,15 @@
-body {
-  text-align: center;
-}
-h1 {
-  color: rgb(101, 7, 239);
-}
 button {
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: inherit;
+  color: #4a4e69;
+  border: solid 3px #4a4e69;
   width: 300px;
   padding: 1em;
   margin: 0.5em;
+  &:hover {
+    background-color: #ccd9e6;
+    transition: 0.2s;
+  }
 }
 
 .container {

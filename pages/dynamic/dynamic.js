@@ -2,12 +2,14 @@ let newPara = document.createElement("p");
 let parent = document.getElementById("parent");
 parent.appendChild(newPara);
 
+// ESCOLHENDO ONDE INSERIR ELEMENTOS-FILHOS
 let contentParent = document.getElementById("content");
 let anotherPara = document.createElement("p");
 anotherPara.textContent =
   "Eu sou um parágrafo cujo texto foi adicionado via JS!";
 contentParent.append(anotherPara);
 
+// node.insertBefore() e node.removeChild()
 let olFather = document.getElementById("ol-father");
 let afterBefore = document.getElementById("after-before");
 
@@ -25,6 +27,7 @@ function removeBeforeFunc() {
   if (olFather.children.length === 3) olFather.removeChild(liElement);
 }
 
+// remove()
 function removeFunc() {
   let fatherRemoval = document.getElementById("removal-ol");
   console.log(fatherRemoval.children.length);
@@ -44,6 +47,7 @@ function restore() {
   }
 }
 
+// cloneNode()
 function clone() {
   let cloneParent = document.querySelector("#clone-parent");
   let murilo = document.querySelector("#murilo");
@@ -65,4 +69,25 @@ function stopClone() {
 
   clearInterval(intervalId);
   cloneParent.appendChild(stop);
+}
+
+// Exercise (Animals)
+let animalsArray = [
+  "Dog",
+  "Cat",
+  "Warthog",
+  "Eagle",
+  "Elephant",
+  "Giraffe",
+  "Lion",
+];
+
+function addAnimals() {
+  let animalsParent = document.querySelector("#animals-parent");
+
+  for (let i = 0; i < animalsArray.length; i++) {
+    let item = document.createElement("li");
+    item.textContent = `${animalsArray[i]}`;
+    animalsParent.appendChild(item);
+  }
 }
