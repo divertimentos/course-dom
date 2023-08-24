@@ -43,3 +43,26 @@ function restore() {
     }
   }
 }
+
+function clone() {
+  let cloneParent = document.querySelector("#clone-parent");
+  let murilo = document.querySelector("#murilo");
+  let clonedMurilo = murilo.cloneNode(true);
+
+  cloneParent.appendChild(clonedMurilo);
+}
+
+let intervalId = 0;
+
+function interval(time = 500) {
+  intervalId = setInterval(clone, time);
+}
+
+function stopClone() {
+  let cloneParent = document.querySelector("#clone-parent");
+  let stop = document.createElement("li");
+  stop.textContent = "Parei de clonar!";
+
+  clearInterval(intervalId);
+  cloneParent.appendChild(stop);
+}

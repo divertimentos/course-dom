@@ -152,6 +152,29 @@
             </button>
           </div>
         </div>
+        <h3>cloneNode</h3>
+        <div>
+          <p>O <code>cloneNode()</code>recebe um argumento booleano:</p>
+          <code>false</code> para clonar somente o elemento escolhido e
+          <code>true</code> para clonar também seus descendentes. O próprio
+          Clyde já deu um spoiler de que por "descendentes" consideramos
+          qualquer nó, não apenas elementos. Isso significa que se, por exemplo,
+          clonarmos um parágrafo, precisamos passar <code>true</code> se
+          quisermos clonar também o texto dentro do mesmo.
+        </div>
+        <div id="clone-container">
+          <ul id="clone-parent">
+            <li id="murilo">Hello, my name is Murilo Benício</li>
+          </ul>
+          <div class="buttons-container">
+            <button class="insert-button" onclick="interval()" type="">
+              Start cloning
+            </button>
+            <button class="insert-button" onclick="stopClone()" type="">
+              Stop cloning
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

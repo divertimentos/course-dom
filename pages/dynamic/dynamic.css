@@ -6,7 +6,8 @@ p {
   margin: 0;
 }
 
-#removal {
+#removal,
+#clone-container {
   border: 3px solid #4a4e69;
   display: flex;
   justify-content: space-between;
